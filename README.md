@@ -1,2 +1,2 @@
 # smsapi-bundle
-Symfony 2 bundle dla biblioteki SMSApi PHP Client.
+Symfony 2 Bundle dla biblioteki SMSApi PHP Client.

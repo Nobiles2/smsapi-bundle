@@ -1,0 +1,7 @@
+parameters:
+    kch_sms_api.client.class:  SMSApi\Client
+    kch_sms_api.sms_factory.class:  SMSApi\Api\SmsFactory
+    kch_sms_api.mms_factory.class:  SMSApi\Api\MmsFactory
+    kch_sms_api.vms_factory.class:  SMSApi\Api\VmsFactory
+    kch_sms_api.sender_factory.class:  SMSApi\Api\SenderFactory
+    kch_sms_api.contacts_factory.class:  SMSApi\Api\ContactsFactory
