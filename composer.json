@@ -3,12 +3,12 @@
     "description" : "Symfony 2 Bundle for SMSApi PHP Client library.",
     "type" : "symfony-bundle",
     "authors" : [{
-        "name" : "",
-        "email" : ""
+        "name" : "KredytyChwilowkiProgrammer",
+        "email" : "p.pikula@kredyty-chwilowki.pl"
     }],
     "keywords" : ["sms", "mms", "vms", "bundle"],
     "license" : [
-        ""
+        "MIT"
     ],
     "require" : {
         "php": ">=5.3.0",
