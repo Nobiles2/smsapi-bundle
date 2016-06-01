@@ -55,30 +55,40 @@ class KCHSmsApiExtension extends Extension
         $container->setDefinition(
             sprintf('kch_sms_api.sms_factory.%s', $clientName),
             new Definition('%kch_sms_api.sms_factory.class%')
-        )->addMethodCall('setClient', array($clientService));
+        )
+            ->addMethodCall('setClient', array($clientService))
+            ->addTag('kch_sms_api.factory', array('alias' => 'kch_sms_api_factory'));
 
         // MmsFactory
         $container->setDefinition(
             sprintf('kch_sms_api.mms_factory.%s', $clientName),
             new Definition('%kch_sms_api.mms_factory.class%')
-        )->addMethodCall('setClient', array($clientService));
+        )
+            ->addMethodCall('setClient', array($clientService))
+            ->addTag('kch_sms_api.factory', array('alias' => 'kch_sms_api_factory'));
 
         // VmsFactory
         $container->setDefinition(
             sprintf('kch_sms_api.vms_factory.%s', $clientName),
             new Definition('%kch_sms_api.vms_factory.class%')
-        )->addMethodCall('setClient', array($clientService));
+        )
+            ->addMethodCall('setClient', array($clientService))
+            ->addTag('kch_sms_api.factory', array('alias' => 'kch_sms_api_factory'));
 
         // SenderFactory
         $container->setDefinition(
             sprintf('kch_sms_api.sender_factory.%s', $clientName),
             new Definition('%kch_sms_api.sender_factory.class%')
-        )->addMethodCall('setClient', array($clientService));
+        )
+            ->addMethodCall('setClient', array($clientService))
+            ->addTag('kch_sms_api.factory', array('alias' => 'kch_sms_api_factory'));
 
         // ContactsFactory
         $container->setDefinition(
             sprintf('kch_sms_api.contacts_factory.%s', $clientName),
             new Definition('%kch_sms_api.contacts_factory.class%')
-        )->addMethodCall('setClient', array($clientService));
+        )
+            ->addMethodCall('setClient', array($clientService))
+            ->addTag('kch_sms_api.factory', array('alias' => 'kch_sms_api_factory'));
     }
 }
